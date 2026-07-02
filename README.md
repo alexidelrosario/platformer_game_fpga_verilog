@@ -21,15 +21,13 @@ The project was designed as a hardware-focused game system, with all game logic,
 * Player has 3 lives before game over
 
 ## Demo
-Scoring points
 <p align="center">
-    <img src="./images/fpga_game_score_point.gif" width="75%" />
+    <img src="./images/fpga_game_score_point.gif" width="40%" /> <br>
     <sub><i>Purple player jumps and reaches coin, scoring 1 point displayed on FPGA</i></sub>
 </p>
 
-Losing Life
 <p align="center">
-    <img src="./images/fpga_game_lose_life.gif" width="75%" />
+    <img src="./images/fpga_game_lose_life.gif" width="40%" /> <br>
     <sub><i>Pressing the L button enables 3-life mode shown by LEDs. The player collides with an obstacle and loses one life.</i></sub>
 </p>
 
@@ -103,5 +101,5 @@ This project focused heavily on low-level digital design concepts including:
 * Modular RTL design
 
 ## Acknowledgements
-**Thanks to:** Professor Dustin Richmond and all of the TAs who helped me with this project. 
+Special thanks to Professor Dustin Richmond and all of the TAs for their guidance and support in class.  
 <i>Built for CSE 100 Digital Logic, UC Santa Cruz — June 2025</i>
