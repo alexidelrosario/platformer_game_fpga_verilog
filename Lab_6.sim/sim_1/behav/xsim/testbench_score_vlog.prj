@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/addSub8.v" \
+"../../../../Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/adder8.v" \
+"../../../../Lab_6.srcs/sources_1/imports/sources_1/new/countUD4L.v" \
+"../../../../Lab_6.srcs/sources_1/imports/sources_1/new/counterUD16L.v" \
+"../../../../Lab_6.srcs/sources_1/new/score.v" \
+"../../../../Lab_6.srcs/sources_1/new/testbench_score.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

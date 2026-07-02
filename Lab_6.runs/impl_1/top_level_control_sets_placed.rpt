@@ -1,0 +1,130 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Fri Jun 13 00:17:03 2025
+| Host         : BELSPC0020L running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    52 |
+|    Minimum number of control sets                        |    52 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   218 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    52 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |    43 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              41 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               7 |            5 |
+| Yes          | No                    | No                     |             157 |           64 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              33 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|         Clock Signal         |                    Enable Signal                   |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|  not_so_slow/slowclk/clk_out | gameplay/led_OBUF[4]                               | btnR_IBUF                               |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | gameplay/CE0                                       | btnR_IBUF                               |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | gameplay/ff_3_0                                    | gameplay/reset_player_flash             |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | count_flash/count_3/ff_1                           | gameplay/reset_coin_flash               |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out | gameplay/ff_4_0                                    | btnR_IBUF                               |                1 |              1 |         1.00 |
+|  not_so_slow/slowclk/clk_out |                                                    | btnR_IBUF                               |                3 |              3 |         1.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_v/count_1/ce_w                  | curr_address/count_v/count_0/reset_i0   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | power_bar/count_bar/count_0/ce_w                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_5                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0            |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/ed_load_coin/ce_w                     |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/ed_load_coin/ce_w_0                   |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/ed_load_coin/ce_w_1                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | count_flash/count_0/ce_w_0                         |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_h/count_0/ce_w_0                | curr_address/count_h/count_0/ld_i00_out |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_h/count_1/ce_w                  | curr_address/count_h/count_0/ld_i00_out |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_v/count_1/ce_w_0                | curr_address/count_v/count_0/reset_i0   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | power_bar/count_bar/count_1/ce_w                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_v/count_0/ce_w_1                | curr_address/count_v/count_0/reset_i0   |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | player_address/count_player/count_0/ce_w           |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w                     |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_0                   |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_1                   |                                         |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_2                   |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_4                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO                    |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | score_points/count_score/count_0/ce_w_0            |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/count_hole_midpt/count_1/ce_w         |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out |                                                    | curr_address/count_h/count_0/ld_i00_out |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | player_address/count_player/count_0/ce_w_1         |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xa/count_1/ce_w            |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xa/count_3/ce_w            |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xa/count_1/ce_w_0          |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | player_address/count_player/count_0/ff_startup     |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO                    |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_h/count_0/ce_w                  | curr_address/count_v/count_0/reset_i0   |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_h/count_2/ce_w                  | curr_address/count_h/count_0/ld_i00_out |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | power_bar/count_bar/count_0/a_ff_0_i_1__36_n_0     |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xb/count_1/ce_w            |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xb/count_3/ce_w            |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | count_flash/count_1/ce_w                           |                                         |                3 |              4 |         1.33 |
+|  not_so_slow/slowclk/clk_out | count_flash/count_1/ce_w_0                         |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/ed_load_hole/ce_w_3                   |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | player_address/count_player/count_0/ce_w_0         |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xa/count_0/ce_w_0          |                                         |                2 |              4 |         2.00 |
+|  not_so_slow/slowclk/clk_out | curr_address/count_v/count_0/ce_w                  |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | power_bar/count_bar/count_2/ce_w                   |                                         |                1 |              4 |         4.00 |
+|  not_so_slow/slowclk/clk_out | hole_address/count_hole_a/count_0/change_width_w   |                                         |                2 |              5 |         2.50 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO                    |                                         |                2 |              5 |         2.50 |
+|  not_so_slow/slowclk/clk_out | btnU_falling_edge                                  |                                         |                3 |              7 |         2.33 |
+|  not_so_slow/slowclk/clk_out | coin_address/count_hole_xb/count_0/change_height_w |                                         |                3 |              8 |         2.67 |
+|  not_so_slow/slowclk/clk_out |                                                    |                                         |               19 |             41 |         2.16 |
++------------------------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+
+

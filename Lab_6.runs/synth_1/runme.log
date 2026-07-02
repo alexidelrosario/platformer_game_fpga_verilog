@@ -1,0 +1,457 @@
+
+*** Running vivado
+    with args -log top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1331.500 ; gain = 0.023 ; free physical = 5685 ; free virtual = 13267
+Command: read_checkpoint -auto_incremental -incremental /home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/utils_1/imports/synth_1/top_level.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 176844
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2027.316 ; gain = 404.715 ; free physical = 4726 ; free virtual = 12308
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'val_0', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:34]
+INFO: [Synth 8-11241] undeclared symbol 'val_1', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'val_2', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'val_3', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:37]
+INFO: [Synth 8-11241] undeclared symbol 'val_4', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:38]
+INFO: [Synth 8-11241] undeclared symbol 'val_5', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:39]
+INFO: [Synth 8-11241] undeclared symbol 'val_6', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:40]
+INFO: [Synth 8-11241] undeclared symbol 'val_7', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:41]
+INFO: [Synth 8-11241] undeclared symbol 'val_8', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:42]
+INFO: [Synth 8-11241] undeclared symbol 'val_9', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:43]
+INFO: [Synth 8-11241] undeclared symbol 'val_A', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:44]
+INFO: [Synth 8-11241] undeclared symbol 'val_B', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'val_C', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:46]
+INFO: [Synth 8-11241] undeclared symbol 'val_D', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'val_E', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:48]
+INFO: [Synth 8-11241] undeclared symbol 'val_F', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:49]
+INFO: [Synth 8-11241] undeclared symbol 'x1', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/new/lfsr.v:11]
+INFO: [Synth 8-11241] undeclared symbol 'x2', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/new/lfsr.v:12]
+INFO: [Synth 8-11241] undeclared symbol 'y', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/new/lfsr.v:13]
+INFO: [Synth 8-11241] undeclared symbol 'advance', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/ringCounter.v:33]
+INFO: [Synth 8-11241] undeclared symbol 'x_player_a_o', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/track_player.v:43]
+INFO: [Synth 8-11241] undeclared symbol 'x_player_b_o', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/track_player.v:44]
+INFO: [Synth 8-11241] undeclared symbol 'digsel', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:22]
+INFO: [Synth 8-11241] undeclared symbol 'one_frame_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'half_frame_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:31]
+INFO: [Synth 8-11241] undeclared symbol 'quarter_frame_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'up_y_bar_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:55]
+INFO: [Synth 8-11241] undeclared symbol 'down_y_bar_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:56]
+INFO: [Synth 8-11241] undeclared symbol 'up_y_player_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:97]
+INFO: [Synth 8-11241] undeclared symbol 'down_y_player_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:98]
+INFO: [Synth 8-11241] undeclared symbol 'coin0_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:140]
+INFO: [Synth 8-11241] undeclared symbol 'hole0_w', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:160]
+WARNING: [Synth 8-8895] 'up_y_player_w' is already implicitly declared on line 97 [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:237]
+WARNING: [Synth 8-8895] 'down_y_player_w' is already implicitly declared on line 98 [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:237]
+WARNING: [Synth 8-8895] 'up_y_bar_w' is already implicitly declared on line 55 [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:237]
+WARNING: [Synth 8-8895] 'down_y_bar_w' is already implicitly declared on line 56 [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:237]
+INFO: [Synth 8-11241] undeclared symbol 'yellow_coin', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:320]
+INFO: [Synth 8-11241] undeclared symbol 'black_hole', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:322]
+INFO: [Synth 8-11241] undeclared symbol 'player_spot', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:324]
+INFO: [Synth 8-11241] undeclared symbol 'platform_base', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:326]
+INFO: [Synth 8-11241] undeclared symbol 'platform_top', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:327]
+INFO: [Synth 8-11241] undeclared symbol 'charge_bar', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:329]
+INFO: [Synth 8-11241] undeclared symbol 'border_red', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:332]
+INFO: [Synth 8-11241] undeclared symbol 'flash_coin', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:337]
+INFO: [Synth 8-11241] undeclared symbol 'flash_player', assumed default net type 'wire' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:338]
+WARNING: [Synth 8-6901] identifier 'x_hole_b_w' is used before its declaration [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:160]
+INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:3]
+INFO: [Synth 8-6157] synthesizing module 'labVGA_clks' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:55]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+INFO: [Synth 8-6157] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'FTCE_MXILINX_clkcntrl4' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'XOR2' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:139043]
+INFO: [Synth 8-6155] done synthesizing module 'XOR2' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:139043]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40789]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:40789]
+INFO: [Synth 8-6155] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:274]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:137428]
+INFO: [Synth 8-6155] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:304]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1897]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1897]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:188]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:38]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: double 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-6155] done synthesizing module 'labVGA_clks' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/labVGA_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pixel_address' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/pixel_address.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counterUD16L' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/new/counterUD16L.v:3]
+INFO: [Synth 8-6157] synthesizing module 'countUD4L' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/new/countUD4L.v:23]
+INFO: [Synth 8-6157] synthesizing module 'addSub8' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/addSub8.v:7]
+INFO: [Synth 8-6157] synthesizing module 'adder8' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/adder8.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'adder8' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/adder8.v:7]
+WARNING: [Synth 8-7071] port 'ovfl' of module 'adder8' is unconnected for instance 'addition' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/addSub8.v:21]
+WARNING: [Synth 8-7023] instance 'addition' of module 'adder8' has 6 connections declared, but only 5 given [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/addSub8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'addSub8' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/addSub8.v:7]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6155] done synthesizing module 'countUD4L' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/new/countUD4L.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterUD16L' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/new/counterUD16L.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_address' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/pixel_address.v:3]
+INFO: [Synth 8-6157] synthesizing module 'syncs' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/syncs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'syncs' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/syncs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:41005]
+INFO: [Synth 8-6157] synthesizing module 'bar_track' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/bar_track.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bar_track' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/bar_track.v:3]
+INFO: [Synth 8-6157] synthesizing module 'track_player' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/track_player.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'track_player' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/track_player.v:4]
+INFO: [Synth 8-6157] synthesizing module 'coin_track' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/coin_track.v:3]
+INFO: [Synth 8-6157] synthesizing module 'lfsr' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/new/lfsr.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/new/lfsr.v:3]
+INFO: [Synth 8-6157] synthesizing module 'edgeDetector' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/lab_3_final.xpr/lab_3/lab_3.srcs/sources_1/new/edgeDetector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'edgeDetector' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/Downloads/lab_3_final.xpr/lab_3/lab_3.srcs/sources_1/new/edgeDetector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod53' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/mod53.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mod53' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/mod53.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'coin_track' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/coin_track.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hole_track' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/hole_track.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'q_o' does not match port width (8) of module 'lfsr' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/hole_track.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'hole_track' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/hole_track.v:3]
+INFO: [Synth 8-6157] synthesizing module 'touch' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/touch.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'touch' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/touch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'life' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/life.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'life' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/life.v:4]
+INFO: [Synth 8-6157] synthesizing module 'FSM_gameplay' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/FSM_gameplay.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_gameplay' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/FSM_gameplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FSM_player' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/FSM_player.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_player' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/FSM_player.v:3]
+INFO: [Synth 8-6157] synthesizing module 'score' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/score.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'score' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/score.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ringCounter' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/ringCounter.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'ringCounter' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/ringCounter.v:25]
+INFO: [Synth 8-6157] synthesizing module 'selector' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/hex7seg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (0#1) [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/sources_1/new/top_level.v:3]
+WARNING: [Synth 8-7129] Port btnR_i in module FSM_gameplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnD in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module top_level is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2107.285 ; gain = 484.684 ; free physical = 4624 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2122.129 ; gain = 499.527 ; free physical = 4624 ; free virtual = 12206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2122.129 ; gain = 499.527 ; free physical = 4624 ; free virtual = 12206
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2128.066 ; gain = 0.000 ; free physical = 4616 ; free virtual = 12198
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/constrs_1/imports/CSE100_Labs/Basys3_Master_b.xdc]
+Finished Parsing XDC File [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/constrs_1/imports/CSE100_Labs/Basys3_Master_b.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.srcs/constrs_1/imports/CSE100_Labs/Basys3_Master_b.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2240.863 ; gain = 0.000 ; free physical = 4610 ; free virtual = 12193
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.898 ; gain = 0.000 ; free physical = 4610 ; free virtual = 12193
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4607 ; free virtual = 12189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4607 ; free virtual = 12189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4607 ; free virtual = 12189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4603 ; free virtual = 12187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
+	   3 Input    7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 40    
+	   3 Input      1 Bit         XORs := 160   
+	   2 Input      1 Bit         XORs := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port btnR_i in module FSM_gameplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btnD in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module top_level is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_2/a_ff_0) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_2/a_ff_1) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_2/a_ff_2) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_2/a_ff_3) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_3/a_ff_0) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_3/a_ff_1) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_3/a_ff_2) is unused and will be removed from module score.
+WARNING: [Synth 8-3332] Sequential element (count_score/count_3/a_ff_3) is unused and will be removed from module score.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |    60|
+|7     |LUT1       |    31|
+|8     |LUT2       |   265|
+|9     |LUT3       |    57|
+|10    |LUT4       |   229|
+|11    |LUT5       |    79|
+|12    |LUT6       |   179|
+|13    |MMCME2_ADV |     1|
+|14    |MUXF7      |     7|
+|15    |MUXF8      |     3|
+|16    |STARTUPE2  |     1|
+|17    |XOR2       |    16|
+|18    |FDCE       |    16|
+|19    |FDRE       |   221|
+|20    |IBUF       |     7|
+|21    |OBUF       |    38|
+|22    |OBUFT      |     3|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2240.898 ; gain = 499.527 ; free physical = 4587 ; free virtual = 12175
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2240.898 ; gain = 618.297 ; free physical = 4587 ; free virtual = 12175
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2240.898 ; gain = 0.000 ; free physical = 4875 ; free virtual = 12463
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2240.898 ; gain = 0.000 ; free physical = 4874 ; free virtual = 12462
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instance 
+  XOR2 => LUT2: 16 instances
+
+Synth Design complete | Checksum: f8429858
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2240.898 ; gain = 909.398 ; free physical = 4873 ; free virtual = 12461
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1820.176; main = 1491.363; forked = 377.688
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3230.070; main = 2240.867; forked = 989.203
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2264.875 ; gain = 0.000 ; free physical = 4873 ; free virtual = 12461
+INFO: [Common 17-1381] The checkpoint '/home/aljdelro/Downloads/Lab_6L.xpr/Lab_6/Lab_6.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 00:16:32 2025...

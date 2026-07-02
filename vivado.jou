@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jun 13 16:34:10 2025
+# Process ID: 10312
+# Current directory: D:/CSE100_Labs/Lab_6N_final.xpr/Lab_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10336 D:\CSE100_Labs\Lab_6N_final.xpr\Lab_6\Lab_6.xpr
+# Log file: D:/CSE100_Labs/Lab_6N_final.xpr/Lab_6/vivado.log
+# Journal file: D:/CSE100_Labs/Lab_6N_final.xpr/Lab_6\vivado.jou
+# Running On: Alexi, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 16761 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/CSE100_Labs/Lab_6N_final.xpr/Lab_6/Lab_6.xpr
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+close_bd_design [get_bd_designs design_1]
+open_run impl_1
+close_design
+open_run impl_1
+report_design_analysis -timing -setup -max_paths 10 -congestion -name design_analysis_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
