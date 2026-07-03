@@ -68,23 +68,23 @@ The overall design emphasizes modular RTL development, with each subsystem opera
 
 Key modules:
 
-* `top_level.v` — top-level system integration
-* `FSM_player.v` — player movement and jump state logic
-* `FSM_gameplay.v` — overall game state control
-* `track_player.v` — player position tracking for falling and jumping
-* `coin_track.v` — coin generation and tracking
-* `hole_track.v` — generates random hole width and tracks obstacle position
-* `pixel_address.v` — pixel coordinate generation
-* `syncs.v` — VGA synchronization signals
-* `life.v` — player life tracking
-* `lfsr.v` — pseudo-random obstacle generation
-* `touch.v` — collision detection across player/coin/hole/floor
-* `score.v` — score tracking and trigger coin flashing
+* `top_level` — top-level system integration
+* `player_FSM` — player movement and jump state logic
+* `gameplay_FSM` — overall game state control
+* `player_track` — player position tracking for falling and jumping
+* `coin_track` — coin generation and tracking
+* `hole_track` — generates random hole width and tracks obstacle position
+* `pixel_address` — pixel coordinate generation
+* `syncs` — VGA synchronization signals
+* `life` — player life tracking
+* `lfsr` — (Linear-Feedback Shift Register) pseudo-random generator 
+* `touches` — collision detection across player/coin/hole/floor
+* `score` — score tracking and trigger coin flashing
   
 ## Debugging Techniques
 Several hardware debugging methods were built into the design during development.
 * Switch 14 disables obstacle collisions, allowing coin collection to be tested independently
-* LEDs [0:10] display internal states from both finite state machines
+* LEDs [10:0] display internal states from both finite state machines
 * Button L enables 3-life mode for testing life and game-over behavior
 * Testbenches were created for individual modules to isolate and resolve bugs
 
